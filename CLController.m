@@ -40,7 +40,7 @@
 }
 
 - (void)dealloc {
-	[self.locationManager release];
+	[locationManager release]; //should never refer to self when releasing synthesized objects
     [super dealloc];
 }
 
